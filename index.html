@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="js/java.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/querie.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <nav class="nav">
+          <div class="nav-container flex">
+            <div class="logo-part flex">
+              <figure class="overflow-round">
+                <img
+                  src="img/logo/images.jpg"
+                  alt="An image of a jester with a crown surrounded with balloons"
+                  class="logo-img"
+                />
+              </figure>
+              <span>
+                <a class="no" href="https://www.facebook.com/boundlessjumps">
+                  <strong class="logo-name" onclick="fbLink()"
+                    >Boundless Jumps</strong
+                  ></a
+                >
+              </span>
+            </div>
+            <div class="nav-menu-mobil" onclick="navMenuOpen()">
+              <ion-icon
+                class="nav-menu-mobil-icon"
+                name="grid-outline"
+              ></ion-icon>
+            </div>
+            <div class="main-nav">
+              <ul class="main-nav-links grid grid--3-cols col--gap-32">
+                <li><a class="nav-link" href="#process">Process</a></li>
+                <li>
+                  <a
+                    class="no link--more nav-link"
+                    href="#"
+                    onclick="menuOpen()"
+                  >
+                    More
+                    <ion-icon
+                      class="arrow-1 arrow--open"
+                      name="caret-up-outline"
+                    ></ion-icon>
+                    <ion-icon
+                      class="arrow-2"
+                      name="caret-down-outline"
+                    ></ion-icon>
+                    <div class="menu-holder">
+                      <p>
+                        <a class="footer-sub-text no" href="productpage.html"
+                          >Bouncy houses</a
+                        >
+                      </p>
+                      <p>
+                        <a class="footer-sub-text no" href="productpage.html"
+                          >Tents</a
+                        >
+                      </p>
+                      <p>
+                        <a class="footer-sub-text no" href="productpage.html"
+                          >Tables with chairs</a
+                        >
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li><a class="nav-link" href="#gallery">Gallery</a></li>
+              </ul>
+            </div>
+            <div class="nav-btn flex">
+              <a
+                class="btn btn-sign-in no"
+                href="mailto:boundlessjumps@gmail.com"
+                >Contact Us</a
+              >
+              <a class="btn btn-cta no" href="productpage.html"
+                >Menu supply's</a
+              >
+            </div>
+          </div>
+        </nav>
+
+        <div class="hero">
+          <div class="container grid grid--2-cols col--gap-14">
+            <div class="hero--1 flex--start">
+              <img
+                src="img/Icon/color/SVG/FAQ.svg"
+                alt="Two text boxes with the first one saying FAQ and the other one having a question mark"
+                class="hero-svg"
+              />
+              <h1 class="heading">
+                Endless supply's for birthday party's, quinces, and baby showers
+              </h1>
+              <span class="hero-sum">
+                Boundless Jumps is a event supplier for birthday party's,<br />
+                quinces, and baby showers.</span
+              >
+              <a class="btn hero--btn hero--btn-1 no" href="productpage.html"
+                >Start supply selection</a
+              >
+              <a class="btn hero--btn hero--btn-2" href="#about"
+                >More information</a
+              >
+              <div class="event-photos">
+                <div class="hero-event-photos">
+                  <img src="img/event_photos/15_1.jpg" alt="event photo" />
+                  <img src="img/event_photos/15_2.jpg" alt="event photo" />
+                  <img src="img/event_photos/15_3.jpg" alt="event photo" />
+                  <img
+                    src="img/event_photos/bounce_house_1.jpg"
+                    alt="event photo"
+                  />
+                  <img
+                    src="img/event_photos/bounce_house_2.jpg"
+                    alt="event photo"
+                  />
+                  <img
+                    src="img/event_photos/bounce_house_3.jpg"
+                    alt="event photo"
+                  />
+                  <img src="img/event_photos/tent1.jpg" alt="event photo" />
+                  <img src="img/event_photos/tent2.jpg" alt="event photo" />
+                  <img src="img/event_photos/tent3.jpg" alt="event photo" />
+                </div>
+              </div>
+            </div>
+            <div class="hero--2">
+              <img
+                src="img/hero/blj_web_hero_img.png"
+                alt="A photo of tables with white tablecloths, on top of the table clothes are golden and red clothe strings and chairs with white clothes on top of it tied with golden and red clothes, it is all under a white tent.
+            The second photo is a cocomelon birthday party, it has balloons ranging from all the colors in the rainbow"
+                class="hero-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="about-section" id="about">
+      <div class="about-feature container flex">
+        <img
+          src="img/event_photos/15_3.jpg"
+          alt="A photo of tables with white tablecloths, on top of the table clothes are golden and red clothe strings and chairs with white clothes on top of it tied with golden and red clothes, it is all under a white tent."
+          class="about-photo"
+        />
+
+        <div class="about-holder">
+          <h2 class="sub-heading">About Boundless Jumps</h2>
+          <span class="ter-text about-text">
+            We are a rental business that mainly focuses on supplying bouncy
+            houses, tents, tables with chairs, and decoration for events like
+            birthday party's quinces and baby showers. We have chairs with
+            tables, tents, and bouncy houses for events like these. This company
+            was first formed in 2021. Check out some photos from a few of our
+            past events.</span
+          >
+          <a class="btn btn--gallery" href="#gallery">View Past Events</a>
+          <!-- <p ></p> -->
+        </div>
+      </div>
+    </section>
+    <section class="how-section" id="process">
+      <div class="container">
+        <div class="how-holder grid grid--2-cols">
+          <div>
+            <h2 class="sub-heading">Choose you're supply's</h2>
+            <span class="ter-text">
+              As a customer you'll get to choose what products/items you'll need
+              for you're event.
+            </span>
+          </div>
+          <ion-icon class="how-icon" name="navigate"></ion-icon>
+        </div>
+        <div class="how-holder grid grid--2-cols">
+          <div>
+            <h2 class="sub-heading">Booking date, time, location</h2>
+            <span class="ter-text">
+              Once products are chosen and booking information given, we will
+              receive an email containing information about the date, time,
+              location, and products/items chosen.
+            </span>
+          </div>
+          <ion-icon class="how-icon" name="timer"></ion-icon>
+        </div>
+        <div class="how-holder grid grid--2-cols">
+          <div>
+            <h2 class="sub-heading">You're booking confirmation</h2>
+            <span class="ter-text">
+              After 1 business day you'll receive a custom message containing
+              information about the pricing and about the confirmation of the
+              booking.
+            </span>
+          </div>
+          <ion-icon class="how-icon" name="chatbubbles"></ion-icon>
+        </div>
+      </div>
+    </section>
+    <section class="gallery" id="gallery">
+      <div class="photo-container container grid grid--3-cols">
+        <figure class="img-item">
+          <img src="img/event_photos/15_1.jpg" alt="event photo" />
+        </figure>
+        <figure class="img-item">
+          <img src="img/event_photos/15_2.jpg" alt="event photo" />
+        </figure>
+        <figure class="img-item">
+          <img src="img/event_photos/15_3.jpg" alt="event photo" />
+        </figure>
+        <figure class="img-item">
+          <img src="img/event_photos/bounce_house_1.jpg" alt="event photo" />
+        </figure>
+        <figure class="img-item">
+          <img src="img/event_photos/cocomelon.jpg" alt="event photo" />
+        </figure>
+        <figure class="img-item">
+          <img src="img/event_photos/bounce_house_3.jpg" alt="event photo" />
+        </figure>
+        <figure class="img-item">
+          <img src="img/event_photos/tent1.jpg" alt="event photo" />
+        </figure>
+        <figure class="img-item">
+          <img src="img/event_photos/tent3.jpg" alt="event photo" />
+        </figure>
+        <figure class="img-item">
+          <img src="img/event_photos/tent2.jpg" alt="event photo" />
+        </figure>
+      </div>
+    </section>
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-card grid grid--2-cols">
+          <div class="">
+            <h2 class="cta-heading">A free event is waiting for you!!</h2>
+            <ul class="cta-list">
+              <li class="cta-text">
+                All you have to do is gather 20 other successful <br />
+                customers through referrals
+              </li>
+              <li class="cta-print">
+                (ALL 20 CUSTOMERS MUST HAVE SUCCESSFULLY <br />
+                BOOKED AN EVENT THATS $250 OR HIGHER).
+              </li>
+            </ul>
+
+            <form class="cta-form" name="Enter email" action="">
+              <label class="email-label" for="email"
+                >Enter email to get startled</label
+              >
+              <input
+                id="email"
+                type="email"
+                placeholder="Email@anyemail.com"
+                name="email"
+                required
+              />
+              <input
+                class="cta-btn"
+                type="submit"
+                name="submit"
+                id=""
+                onclick="test()"
+              />
+            </form>
+          </div>
+          <img
+            class=""
+            src="img/logo/images.jpg"
+            alt="An image of a jester with a crown surrounded with balloons"
+          />
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container container grid">
+        <div class="1f footer-text-flex">
+          <div class="flex company">
+            <figure class="overflow-round">
+              <img
+                src="img/logo/images.jpg"
+                alt="An image of a jester with a crown surrounded with balloons"
+                class="logo-img"
+              />
+            </figure>
+
+            <span class="logo-name"><strong>Boundless Jumps</strong></span>
+          </div>
+          <p class="copyright">
+            Copyright &copy; <span class="year">2027</span> by Boundless Jumps,
+            Inc. All rights reserved.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/boundlessjumps"
+              class="no"
+              target="_blank"
+            >
+              <ion-icon name="logo-facebook" class="fb"></ion-icon
+            ></a>
+          </div>
+        </div>
+        <div class="2f footer-text-flex">
+          <p class="footer-text-main">Company</p>
+          <p><a class="footer-sub-text" href="#">Learn</a></p>
+          <p><a class="footer-sub-text" href="#">FAQ</a></p>
+          <p><a class="footer-sub-text" href="#">About</a></p>
+        </div>
+        <div class="3f footer-text-flex">
+          <p class="footer-text-main">Products</p>
+          <p><a class="footer-sub-text" href="#">Bouncy houses</a></p>
+          <p><a class="footer-sub-text" href="#">Tents</a></p>
+          <p><a class="footer-sub-text" href="#">Tables with chairs</a></p>
+        </div>
+        <div class="4f footer-text-flex">
+          <p class="footer-text-main">Resources</p>
+          <p class="f-s-t">
+            Phones:
+            <a class="footer-sub-text no" href="tel:571-445-2798"
+              >571-445-2798</a
+            >
+            ,
+            <a class="footer-sub-text no" href="tel:240-468-2409"
+              >240-468-2409</a
+            >
+          </p>
+          <p class="f-s-t">
+            Email:
+            <!-- mailto:boundlessjumps@gmail.com -->
+            <a
+              class="footer-sub-text no"
+              href="mailto:everasanchezcruz@gmail.com"
+              >boundlessjumps@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

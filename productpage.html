@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="js/java.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/querie.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav flex">
+        <div class="logo-part flex">
+          <figure class="overflow-round">
+            <img
+              src="img/logo/images.jpg"
+              alt="An image of a jester with a crown surrounded with balloons"
+              class="logo-img"
+            />
+          </figure>
+          <span>
+            <a class="no" href="https://www.facebook.com/boundlessjumps">
+              <strong class="logo-name" onclick="fbLink()"
+                >Boundless Jumps</strong
+              ></a
+            >
+          </span>
+        </div>
+        <div class="main-nav">
+          <ul class="main-nav-links grid grid--3-cols col--gap-32">
+            <li><a class="nav-link" href="#process">Process</a></li>
+            <li><a class="nav-link" href="#gallery">Gallery</a></li>
+            <li>
+              <a class="no link--more nav-link" href="#" onclick="menuOpen()">
+                More
+                <ion-icon
+                  class="arrow-1 arrow--open"
+                  name="caret-up-outline"
+                ></ion-icon>
+                <ion-icon class="arrow-2" name="caret-down-outline"></ion-icon>
+                <div class="menu-holder">
+                  <p><a class="footer-sub-text" href="#">Bouncy houses</a></p>
+                  <p><a class="footer-sub-text" href="#">Tents</a></p>
+                  <p>
+                    <a class="footer-sub-text" href="#">Tables with chairs</a>
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-btn flex">
+          <a class="btn btn-sign-in no" href="mailto:boundlessjumps@gmail.com"
+            >Contact Us</a
+          >
+          <a class="btn btn-cta" href="#">Menu supply's</a>
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
